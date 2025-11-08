@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { BarChart3, TrendingUp, Users, Calendar, Clock } from "lucide-react";
+import { safeJsonParse } from "@/lib/api-utils";
 import {
   ChartContainer,
   ChartTooltip,
@@ -34,7 +35,7 @@ export default function Analytics() {
   const fetchAnalytics = async () => {
     try {
       const response = await fetch("/api/admin/stats");
-      const result = await response.json();
+      const result = await safeJsonParse(response);
       if (result.ok) {
         setData(result.data);
       }

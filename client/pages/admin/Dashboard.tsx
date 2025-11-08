@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AdminLayout from "@/components/admin/AdminLayout";
+import { safeJsonParse } from "@/lib/api-utils";
 import {
   Users,
   Calendar,
@@ -47,7 +48,7 @@ export default function AdminDashboard() {
   const fetchStats = async () => {
     try {
       const response = await fetch("/api/admin/stats");
-      const result = await response.json();
+      const result = await safeJsonParse(response);
       if (result.ok) {
         setStats(result.data);
       }
@@ -61,7 +62,7 @@ export default function AdminDashboard() {
   const handleExport = async () => {
     try {
       const response = await fetch("/api/admin/submissions");
-      const result = await response.json();
+      const result = await safeJsonParse(response);
       if (result.ok && result.data) {
         const csv = [
           ["Date", "Time", "Name", "Address", "Class", "Age", "School", "Phone", "WhatsApp"],

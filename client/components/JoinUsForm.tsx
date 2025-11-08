@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check, X } from 'lucide-react';
+import { safeJsonParse } from '@/lib/api-utils';
 
 export default function JoinUsForm({ onClose }: { onClose: () => void }) {
   const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ export default function JoinUsForm({ onClose }: { onClose: () => void }) {
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
+      const result = await safeJsonParse(response);
 
       if (!response.ok || !result.ok) {
         throw new Error(result.error || 'Failed to submit form');
