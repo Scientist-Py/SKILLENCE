@@ -19,7 +19,12 @@ export function createServer() {
   const app = express();
 
   // Middleware
-  app.use(cors());
+  app.use(cors({
+    origin: process.env.VERCEL_URL 
+      ? [`https://${process.env.VERCEL_URL}`, 'http://localhost:8080']
+      : '*',
+    credentials: true
+  }));
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
