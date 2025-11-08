@@ -16,7 +16,7 @@ export default function CTASection() {
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            Join thousands of students who are mastering AI in just 4 months. The time to start is now.
+            Join thousands of students who are mastering AI. The time to start is now.
           </p>
 
           {/* Main CTA Button */}

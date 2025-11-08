@@ -24,11 +24,18 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             {/* Brand Section */}
             <div>
-              <h3 className="font-semibold text-2xl text-white mb-4">
-                Skillence
-              </h3>
+              <Link to="/" className="flex items-center gap-2 mb-4">
+                <img 
+                  src="/logo.jpg" 
+                  alt="Skillence Logo" 
+                  className="h-10 w-10 object-contain"
+                />
+                <h3 className="font-semibold text-2xl text-white">
+                  Skillence
+                </h3>
+              </Link>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Master Artificial Intelligence in 4 months with 80+ real-world
+                Master Artificial Intelligence with 80+ real-world
                 projects and industry-recognized certification.
               </p>
             </div>
@@ -106,7 +113,7 @@ export default function Footer() {
               </div>
               <div>
                 <h4 className="font-semibold text-white mb-2">What is the duration of the program?</h4>
-                <p className="text-gray-400 text-sm">The program is 4 months long.</p>
+                <p className="text-gray-400 text-sm">The program consists of 4 comprehensive modules.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-white mb-2">What will I learn in this program?</h4>

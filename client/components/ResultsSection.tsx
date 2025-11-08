@@ -35,7 +35,7 @@ export default function ResultsSection() {
             What You'll Achieve
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            By the end of the 4-month program, you'll have the skills and
+            By the end of the program, you'll have the skills and
             portfolio to compete in the AI revolution
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function ResultsSection() {
           </div>
           <div className="text-center p-6 bg-white border border-gray-200 rounded-lg hover:border-gray-400 hover:shadow-md hover:bg-gray-50 transition-all duration-300 hover:scale-105 group cursor-pointer">
             <div className="text-3xl md:text-4xl font-semibold text-black mb-2 group-hover:text-gray-800 transition-colors duration-300">4</div>
-            <p className="text-sm md:text-base text-gray-600 font-medium group-hover:text-gray-700 transition-colors duration-300">Months</p>
+            <p className="text-sm md:text-base text-gray-600 font-medium group-hover:text-gray-700 transition-colors duration-300">Modules</p>
           </div>
           <div className="text-center p-6 bg-white border border-gray-200 rounded-lg hover:border-gray-400 hover:shadow-md hover:bg-gray-50 transition-all duration-300 hover:scale-105 group cursor-pointer">
             <div className="text-3xl md:text-4xl font-semibold text-black mb-2 group-hover:text-gray-800 transition-colors duration-300">50+</div>

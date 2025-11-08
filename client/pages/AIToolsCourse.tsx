@@ -65,7 +65,7 @@ export default function AIToolsCourse() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
               <div className="text-3xl font-bold">4</div>
-              <div className="text-sm">Months Program</div>
+              <div className="text-sm">Modules Program</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
               <div className="text-3xl font-bold">50+</div>
@@ -133,7 +133,7 @@ export default function AIToolsCourse() {
           <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
             <div className="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold mb-3">What You'll Achieve</h3>
-              <p className="text-gray-600">By the end of the 4-month program, you'll have the skills and portfolio to compete in the AI revolution.</p>
+              <p className="text-gray-600">By the end of the program, you'll have the skills and portfolio to compete in the AI revolution.</p>
             </div>
             <div className="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold mb-3">10x Smarter</h3>
@@ -200,7 +200,7 @@ export default function AIToolsCourse() {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold mb-6">Ready to Master AI Tools?</h2>
-          <p className="text-xl mb-8">Join our comprehensive 4-month program and get hands-on experience with 50+ AI tools</p>
+          <p className="text-xl mb-8">Join our comprehensive program and get hands-on experience with 50+ AI tools</p>
           <div className="space-x-4 mt-8">
             <motion.button 
               whileHover={{ scale: 1.05 }}

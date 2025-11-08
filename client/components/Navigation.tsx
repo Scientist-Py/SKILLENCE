@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import JoinUsForm from "./JoinUsForm";
 
 export default function Navigation() {
@@ -30,9 +31,18 @@ export default function Navigation() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
-          <div className="font-semibold text-xl text-black hover:text-gray-600 transition-colors duration-300 cursor-pointer">
-            Skillence
-          </div>
+          <Link 
+            to="/" 
+            className="flex items-center gap-2 font-semibold text-xl text-black hover:text-gray-600 transition-colors duration-300 cursor-pointer"
+            onClick={() => setIsOpen(false)}
+          >
+            <img 
+              src="/logo.jpg" 
+              alt="Skillence Logo" 
+              className="h-8 w-8 object-contain"
+            />
+            <span>Skillence</span>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

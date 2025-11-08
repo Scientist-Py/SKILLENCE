@@ -18,7 +18,7 @@ export default function Index() {
         {/* Hero Section */}
         <Hero />
 
-        {/* Program Overview - 4 Months */}
+        {/* Program Overview - 4 Modules */}
         <div id="program">
           <TimelineMonth monthNumber={1} isDark={false} />
           <TimelineMonth monthNumber={2} isDark={false} />

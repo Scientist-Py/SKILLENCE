@@ -207,7 +207,7 @@ const monthData = {
   },
   4: {
     title: "AI & Automation Project Mastery",
-    subtitle: "100% Applied Learning Month",
+    subtitle: "100% Applied Learning - Build 80+ Real-World Projects",
     modules: [
       {
         icon: "🧠",
@@ -412,7 +412,7 @@ export default function TimelineMonth({ monthNumber, isDark = false }: TimelineM
   return (
     <section className={cn("relative w-full py-8 px-3 sm:py-12 md:py-16 md:px-4 lg:py-20", isDark ? "bg-gray-950 text-white" : "bg-white text-black")}>
       <div className="relative z-10 container mx-auto max-w-6xl px-2 sm:px-4">
-        {/* Month Header */}
+        {/* Module Header */}
         <div className="mb-12 text-center">
           <div className="mb-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3">
@@ -423,7 +423,7 @@ export default function TimelineMonth({ monthNumber, isDark = false }: TimelineM
               isDark ? "bg-blue-900/20 text-blue-300" : "bg-blue-50 text-blue-600"
             )}>
               <span className="font-medium">
-                Month {monthNumber}
+                Module {monthNumber}
               </span>
             </div>
           </div>
