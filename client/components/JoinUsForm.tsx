@@ -57,7 +57,22 @@ export default function JoinUsForm({ onClose }: { onClose: () => void }) {
         body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
+      // Get response text first to check if it's JSON
+      const responseText = await response.text();
+      
+      // Check if response is HTML (error page)
+      if (responseText.trim().startsWith("<!DOCTYPE") || responseText.trim().startsWith("<html") || responseText.trim().startsWith("A server")) {
+        console.error("Server returned HTML instead of JSON:", responseText.substring(0, 200));
+        throw new Error("Server error: Please check if the server is running and API routes are configured correctly.");
+      }
+
+      let result;
+      try {
+        result = JSON.parse(responseText);
+      } catch (parseError) {
+        console.error("Failed to parse response:", responseText.substring(0, 200));
+        throw new Error("Invalid response from server. Please try again.");
+      }
 
       if (!response.ok || !result.ok) {
         throw new Error(result.error || 'Failed to submit form');
