@@ -57,5 +57,27 @@ export function createServer() {
   app.get("/api/admin/submissions", getSubmissions);
   app.get("/api/admin/stats", getDashboardStats);
 
+  // Health check endpoint
+  app.get("/api/health", (_req, res) => {
+    res.json({ 
+      status: "ok", 
+      timestamp: new Date().toISOString(),
+      env: {
+        hasGasUrl: !!process.env.GAS_WEB_APP_URL,
+        hasAdminUsername: !!process.env.ADMIN_USERNAME,
+        hasAdminPassword: !!process.env.ADMIN_PASSWORD,
+      }
+    });
+  });
+
+  // Catch-all for unmatched API routes
+  app.all("/api/*", (req, res) => {
+    console.log(`Unmatched API route: ${req.method} ${req.path}`);
+    res.status(404).json({ 
+      ok: false, 
+      error: `API route not found: ${req.method} ${req.path}` 
+    });
+  });
+
   return app;
 }
