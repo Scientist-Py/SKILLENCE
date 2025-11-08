@@ -19,14 +19,7 @@ export function createServer() {
   const app = express();
 
   // Middleware
-  app.use(cors({
-    origin: process.env.VERCEL 
-      ? true // Allow all origins on Vercel (handled by vercel.json headers)
-      : process.env.VERCEL_URL 
-        ? [`https://${process.env.VERCEL_URL}`, 'http://localhost:8080']
-        : '*',
-    credentials: true
-  }));
+  app.use(cors());
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
@@ -56,28 +49,6 @@ export function createServer() {
   app.post("/api/admin/login", checkAuth);
   app.get("/api/admin/submissions", getSubmissions);
   app.get("/api/admin/stats", getDashboardStats);
-
-  // Health check endpoint
-  app.get("/api/health", (_req, res) => {
-    res.json({ 
-      status: "ok", 
-      timestamp: new Date().toISOString(),
-      env: {
-        hasGasUrl: !!process.env.GAS_WEB_APP_URL,
-        hasAdminUsername: !!process.env.ADMIN_USERNAME,
-        hasAdminPassword: !!process.env.ADMIN_PASSWORD,
-      }
-    });
-  });
-
-  // Catch-all for unmatched API routes
-  app.all("/api/*", (req, res) => {
-    console.log(`Unmatched API route: ${req.method} ${req.path}`);
-    res.status(404).json({ 
-      ok: false, 
-      error: `API route not found: ${req.method} ${req.path}` 
-    });
-  });
 
   return app;
 }

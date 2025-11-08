@@ -1,17 +1,9 @@
-// Vercel serverless function entry point
-// This file handles all API routes for Vercel deployment
 import serverless from "serverless-http";
-import { createServer } from "../server/index";
+import { createServer } from "../server";
 
-// Create Express app
+// Create the Express app
 const app = createServer();
 
-// Wrap Express app with serverless-http for Vercel
-// Configure to handle binary responses
-const handler = serverless(app, {
-  binary: ['application/json', 'text/*', 'application/javascript'],
-});
-
-// Export as Vercel serverless function
-export default handler;
+// Export the serverless handler for Vercel
+export default serverless(app);
 
