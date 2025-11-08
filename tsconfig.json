@@ -36,7 +36,6 @@
     "client/**/*",
     "server/**/*",
     "shared/**/*",
-    "api/**/*",
     "vite.config.ts",
     "vite.config.server.ts"
   ],

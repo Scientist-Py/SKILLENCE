@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import AdminLayout from "@/components/admin/AdminLayout";
 import { Search, Download, Filter, Trash2, Eye } from "lucide-react";
-import { safeJsonParse } from "@/lib/api-utils";
 
 interface Submission {
   date: string;
@@ -33,7 +32,7 @@ export default function Submissions() {
   const fetchSubmissions = async () => {
     try {
       const response = await fetch("/api/admin/submissions");
-      const result = await safeJsonParse(response);
+      const result = await response.json();
       if (result.ok) {
         setSubmissions(result.data || []);
         setFilteredSubmissions(result.data || []);

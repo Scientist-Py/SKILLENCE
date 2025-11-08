@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LogIn, Lock, User } from "lucide-react";
-import { safeJsonParse } from "@/lib/api-utils";
 
 export default function AdminLogin() {
   const [username, setUsername] = useState("");
@@ -24,7 +23,7 @@ export default function AdminLogin() {
         body: JSON.stringify({ username, password }),
       });
 
-      const result = await safeJsonParse(response);
+      const result = await response.json();
 
       if (result.ok && result.authenticated) {
         // Store auth token (simple localStorage for now)

@@ -65,7 +65,7 @@ export default function AIToolsCourse() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
               <div className="text-3xl font-bold">4</div>
-              <div className="text-sm">Modules Program</div>
+              <div className="text-sm">Modules</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
               <div className="text-3xl font-bold">50+</div>
