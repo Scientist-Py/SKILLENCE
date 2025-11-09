@@ -7,6 +7,7 @@ import cors from "cors";
 import { handleDemo } from "./routes/demo";
 import { handleFormSubmission } from "./routes/submit-form";
 import { getSubmissions, getDashboardStats, checkAuth } from "./routes/admin";
+import { handleChatbot } from "./routes/chatbot";
 
 export function createServer() {
   // Debug: Log environment variables on server startup
@@ -14,6 +15,7 @@ export function createServer() {
   console.log("ADMIN_USERNAME:", process.env.ADMIN_USERNAME || "(not set)");
   console.log("ADMIN_PASSWORD:", process.env.ADMIN_PASSWORD ? "***" : "(not set)");
   console.log("GAS_WEB_APP_URL:", process.env.GAS_WEB_APP_URL || "(not set)");
+  console.log("GROQ_API_KEY:", process.env.GROQ_API_KEY ? "***" : "(not set)");
   console.log("======================");
 
   const app = express();
@@ -44,6 +46,9 @@ export function createServer() {
 
   // Form submission route
   app.post("/api/submit-form", handleFormSubmission);
+
+  // Chatbot route
+  app.post("/api/chatbot", handleChatbot);
 
   // Admin routes
   app.post("/api/admin/login", checkAuth);

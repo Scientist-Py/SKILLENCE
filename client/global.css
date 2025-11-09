@@ -97,10 +97,13 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
     font-family:
       -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
       sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
@@ -198,10 +201,33 @@
   }
 
   .project-tile {
-    @apply transition-all duration-300 hover:scale-105 hover:shadow-md;
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-xl;
   }
 
   .module-card-hover {
-    @apply transition-all duration-300 hover:shadow-md hover:border-gray-400;
+    @apply transition-all duration-300 hover:shadow-lg hover:border-gray-300;
+  }
+
+  .premium-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+  }
+
+  .premium-shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .premium-gradient {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-divider {
+    @apply border-t border-gray-100;
   }
 }

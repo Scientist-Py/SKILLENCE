@@ -19,8 +19,8 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="relative w-full bg-black border-t border-gray-800 overflow-hidden">
-        <div className="relative z-10 container mx-auto px-4 py-16">
+      <footer className="relative w-full bg-gradient-to-b from-black via-gray-900 to-black border-t border-gray-800/50 overflow-hidden">
+        <div className="relative z-10 container mx-auto px-4 md:px-6 py-12 md:py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             {/* Brand Section */}
             <div>
@@ -30,7 +30,7 @@ export default function Footer() {
                   alt="Skillence Logo" 
                   className="h-10 w-10 object-contain"
                 />
-                <h3 className="font-semibold text-2xl text-white">
+                <h3 className="font-bold text-2xl text-white tracking-tight">
                   Skillence
                 </h3>
               </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-semibold text-white mb-4 text-sm">
+              <h4 className="font-bold text-white mb-4 text-sm tracking-wide uppercase">
                 Quick Links
               </h4>
               <ul className="space-y-3">
@@ -105,10 +105,10 @@ export default function Footer() {
 
           {/* FAQ Section */}
           <div id="faq" className="border-t border-gray-800 pt-12">
-            <h2 className="font-semibold text-2xl text-white mb-8 text-center">Frequently Asked Questions</h2>
+            <h2 className="font-bold text-2xl md:text-3xl text-white mb-8 text-center tracking-tight">Frequently Asked Questions</h2>
             <div className="space-y-6 max-w-3xl mx-auto">
               <div>
-                <h4 className="font-semibold text-white mb-2">Is Skillence an online or offline coaching center?</h4>
+                <h4 className="font-bold text-white mb-2 tracking-tight">Is Skillence an online or offline coaching center?</h4>
                 <p className="text-gray-400 text-sm">Skillence is an offline coaching center. We believe in providing personalized, hands-on learning to our students.</p>
               </div>
               <div>
@@ -135,19 +135,19 @@ export default function Footer() {
           </div>
 
           {/* Divider */}
-          <div className="border-t border-gray-800 pt-8 mt-12">
-            <div className="flex flex-col sm:flex-row justify-between items-center text-gray-500 text-sm">
-              <p>© 2025 Skillence – All Rights Reserved</p>
+          <div className="border-t border-gray-800/50 pt-8 mt-12">
+            <div className="flex flex-col sm:flex-row justify-between items-center text-gray-400 text-sm">
+              <p className="font-medium">© 2025 Skillence – All Rights Reserved</p>
               <div className="flex gap-6 mt-4 sm:mt-0">
                 <Link
                   to="/privacy-policy"
-                  className="footer-link text-gray-500 hover:text-white"
+                  className="footer-link text-gray-400 hover:text-white font-medium"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   to="/terms-of-service"
-                  className="footer-link text-gray-500 hover:text-white"
+                  className="footer-link text-gray-400 hover:text-white font-medium"
                 >
                   Terms of Service
                 </Link>

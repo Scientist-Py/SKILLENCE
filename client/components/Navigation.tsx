@@ -28,8 +28,8 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div className="container mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
           {/* Logo */}
           <Link 
             to="/" 
@@ -41,7 +41,7 @@ export default function Navigation() {
               alt="Skillence Logo" 
               className="h-8 w-8 object-contain"
             />
-            <span>Skillence</span>
+            <span className="font-semibold tracking-tight">Skillence</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,7 +51,7 @@ export default function Navigation() {
                 key={item.label}
                 href={item.href}
                 onClick={item.label === 'Pricing' ? undefined : handleNavClick}
-                className="nav-link text-gray-600 hover:text-black font-medium text-sm"
+                className="nav-link text-gray-700 hover:text-black font-medium text-sm tracking-wide"
               >
                 {item.label}
               </a>
@@ -62,7 +62,7 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-3">
             <button
               onClick={() => setShowForm(true)}
-              className="px-4 py-2 bg-black text-white font-medium rounded-lg hover:bg-gray-900 transition-all duration-300 text-sm hover:scale-105 active:scale-95"
+              className="px-5 py-2.5 bg-black text-white font-semibold rounded-lg hover:bg-gray-900 transition-all duration-300 text-sm hover:scale-105 active:scale-95 shadow-md hover:shadow-lg"
             >
               Enroll Now
             </button>

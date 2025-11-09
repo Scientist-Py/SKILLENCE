@@ -6,6 +6,7 @@ import ResultsSection from "../components/ResultsSection";
 import MethodSection from "../components/MethodSection";
 import CTASection from "../components/CTASection";
 import Footer from "../components/Footer";
+import Chatbot from "../components/Chatbot";
 
 export default function Index() {
   return (
@@ -47,6 +48,9 @@ export default function Index() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Chatbot */}
+      <Chatbot />
     </div>
   );
 }

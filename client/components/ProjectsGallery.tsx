@@ -138,31 +138,36 @@ export default function ProjectsGallery() {
 
   return (
     <>
-      <section className="relative w-full py-24 px-4 bg-gray-50">
-        <div className="relative z-10 container mx-auto">
+      <section className="relative w-full py-16 md:py-20 px-4 bg-gradient-to-b from-white via-gray-50/50 to-white">
+        <div className="relative z-10 container mx-auto max-w-7xl">
           {/* Section Header */}
-          <div className="mb-16 text-center">
-            <h2 className="font-semibold text-4xl md:text-5xl text-black mb-4">
-              80+ Real-World Projects
+          <div className="mb-12 text-center">
+            <div className="inline-block mb-4">
+              <span className="bg-black text-white px-5 py-2 rounded-full text-sm font-bold tracking-wide shadow-lg">
+                80+ Projects
+              </span>
+            </div>
+            <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-black mb-4 tracking-tight leading-tight">
+              Real-World Projects You'll Build
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto font-normal leading-relaxed">
               Build practical, portfolio-ready projects across multiple AI domains
             </p>
           </div>
 
           {/* Category Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8">
             {projectCategories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 text-sm hover:scale-105 active:scale-95 ${
+                className={`px-5 md:px-6 py-2.5 md:py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 text-xs md:text-sm hover:scale-105 active:scale-95 ${
                   selectedCategory === category.id
-                    ? "bg-black text-white shadow-md"
-                    : "bg-white text-black border border-gray-200 hover:border-gray-400 hover:shadow-sm"
+                    ? "bg-black text-white shadow-xl scale-105"
+                    : "bg-white text-black border border-gray-200 hover:border-gray-300 hover:shadow-lg hover:bg-gray-50"
                 }`}
               >
-                <span className="text-lg group-hover:scale-125 transition-transform duration-300">
+                <span className="text-base md:text-lg">
                   {category.icon}
                 </span>
                 <span>{category.name}</span>
@@ -172,17 +177,17 @@ export default function ProjectsGallery() {
 
           {/* Projects Grid */}
           {selected && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:gap-4 mb-8">
               {selected.projects.map((project, idx) => (
                 <div
                   key={idx}
-                  className="project-tile bg-white p-6 rounded-lg border border-gray-200 cursor-pointer group"
+                  className="project-tile bg-white p-5 md:p-6 rounded-2xl border border-gray-200 cursor-pointer group hover:border-gray-300 hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 premium-shadow hover:premium-shadow-lg"
                 >
-                  <div className="flex items-start gap-3">
-                    <span className="text-3xl group-hover:scale-125 transition-transform duration-300 inline-block">
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <span className="text-4xl md:text-5xl group-hover:scale-110 transition-transform duration-300 inline-block mb-2">
                       {project.icon}
                     </span>
-                    <h3 className="text-black font-medium text-sm leading-snug group-hover:text-gray-700 transition-colors duration-300">
+                    <h3 className="text-black font-semibold text-xs md:text-sm leading-tight group-hover:text-gray-800 transition-colors duration-300">
                       {project.title}
                     </h3>
                   </div>
@@ -191,13 +196,22 @@ export default function ProjectsGallery() {
             </div>
           )}
 
+          {/* Project Count Badge */}
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 bg-gray-100 px-5 py-2.5 rounded-full border border-gray-200">
+              <span className="text-sm font-semibold text-gray-700">
+                <span className="text-black font-bold">{selected?.projects.length || 0}</span> projects in this category
+              </span>
+            </div>
+          </div>
+
           {/* Bottom CTA */}
-          <div className="mt-16 text-center">
+          <div className="mt-8 text-center">
             <button
               onClick={() => setShowForm(true)}
-              className="px-8 py-4 rounded-lg text-white bg-black font-semibold border border-gray-300 hover:bg-gray-800 transition-all duration-300"
+              className="px-8 py-4 rounded-lg text-white bg-black font-semibold hover:bg-gray-800 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
             >
-              Enroll Now
+              Start Building These Projects →
             </button>
           </div>
         </div>
