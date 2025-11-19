@@ -106,9 +106,6 @@ export default function LocationSection() {
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <p className="mt-4 text-xs text-gray-500">
-                Replace the address, phone number, and map link with your exact campus details to keep this section accurate.
-              </p>
             </div>
             <div className="pointer-events-none absolute -left-6 -top-6 hidden h-16 w-16 rounded-2xl bg-blue-100/70 lg:block" />
             <div className="pointer-events-none absolute -right-6 -bottom-6 hidden h-24 w-24 rounded-3xl bg-amber-100/70 lg:block" />
