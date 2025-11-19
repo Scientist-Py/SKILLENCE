@@ -53,6 +53,9 @@ export default function Footer() {
                   <a href="#projects" onClick={handleNavClick} className="footer-link text-gray-400 hover:text-white text-sm inline-block">Projects</a>
                 </li>
                 <li>
+                  <a href="#location" onClick={handleNavClick} className="footer-link text-gray-400 hover:text-white text-sm inline-block">Location</a>
+                </li>
+                <li>
                   <p className="text-gray-400 text-sm">Skillence is a leading provider of AI education, helping students to master the latest AI tools and technologies.</p>
                 </li>
               </ul>
@@ -70,6 +73,9 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="#program" onClick={handleNavClick} className="footer-link text-gray-400 hover:text-white text-sm inline-block">Program Details</a>
+                </li>
+                <li>
+                  <a href="#location" onClick={handleNavClick} className="footer-link text-gray-400 hover:text-white text-sm inline-block">Visit Us</a>
                 </li>
               </ul>
             </div>

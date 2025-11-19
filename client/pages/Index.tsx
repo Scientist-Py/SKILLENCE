@@ -5,6 +5,7 @@ import ProjectsGallery from "../components/ProjectsGallery";
 import ResultsSection from "../components/ResultsSection";
 import MethodSection from "../components/MethodSection";
 import CTASection from "../components/CTASection";
+import LocationSection from "../components/LocationSection";
 import Footer from "../components/Footer";
 import Chatbot from "../components/Chatbot";
 
@@ -41,6 +42,9 @@ export default function Index() {
         <div id="method">
           <MethodSection />
         </div>
+
+        {/* Location Section */}
+        <LocationSection />
 
         {/* Call to Action */}
         <CTASection />
