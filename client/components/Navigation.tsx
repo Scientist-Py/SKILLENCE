@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import JoinUsForm from "./JoinUsForm";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [showForm, setShowForm] = useState(false);
+
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const navItems = [
     { label: "Program", href: "#program" },
@@ -19,11 +22,23 @@ export default function Navigation() {
     const href = (e.currentTarget as HTMLAnchorElement).getAttribute("href");
     if (href?.startsWith("#")) {
       e.preventDefault();
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
-        setIsOpen(false);
+
+      if (location.pathname !== "/") {
+        navigate("/");
+        // Wait for navigation to complete before scrolling
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 100);
+      } else {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }
+      setIsOpen(false);
     }
   };
 
@@ -32,14 +47,14 @@ export default function Navigation() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-sm transition-all duration-300">
         <div className="container mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="flex items-center gap-2 font-semibold text-xl text-black hover:text-gray-600 transition-colors duration-300 cursor-pointer"
             onClick={() => setIsOpen(false)}
           >
-            <img 
-              src="/logo.jpg" 
-              alt="Skillence Logo" 
+            <img
+              src="/logo.jpg"
+              alt="Skillence Logo"
               className="h-8 w-8 object-contain"
             />
             <span className="font-semibold tracking-tight">Skillence</span>

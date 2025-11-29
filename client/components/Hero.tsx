@@ -14,9 +14,9 @@ export default function Hero() {
         Still stuck <span className="text-blue-600 font-extrabold">learning</span> Excel and Tally? It's time to move to AI
         </h1>
 
-        {/* Subtitle with SEO keywords */}
+        {/* Subtitle */}
         <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl font-normal leading-relaxed tracking-wide">
-          Learn <strong>Python Programming</strong>, <strong>Data Science</strong>, <strong>Data Analytics</strong>, and <strong>AI Tools</strong>. Build. Automate. Master <strong>Coding</strong> Skills at Skillence - Best AI Coaching Center in Baghpat.
+          Learn. Build. Automate. Master AI Skills.
         </p>
 
         {/* CTA Buttons */}
