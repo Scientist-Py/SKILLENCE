@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 import Chatbot from "../components/Chatbot";
 import CourseRoadmap from "../components/CourseRoadmap";
+import OutcomeBanner from "../components/OutcomeBanner";
 import { Link } from "react-router-dom";
 
 export default function Index() {
@@ -51,6 +52,9 @@ export default function Index() {
 
         {/* Program Overview - Premium 4-step journey */}
         <CourseRoadmap />
+
+        {/* Outcome Banner */}
+        <OutcomeBanner />
 
         {/* Projects Gallery */}
         <div id="projects">
