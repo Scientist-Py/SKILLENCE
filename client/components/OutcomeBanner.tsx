@@ -1,5 +1,5 @@
 import React from "react";
-import { Sparkles, Code2, Cpu, Globe, Rocket, Bot } from "lucide-react";
+import { Sparkles, Zap, LayoutDashboard, Briefcase, Bot } from "lucide-react";
 import { motion } from "framer-motion";
 
 const OutcomeBanner = () => {
@@ -58,7 +58,7 @@ const OutcomeBanner = () => {
                         Don't Just Learn Code.{" "}
                         <span className="relative inline-block">
                             <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600">
-                                BUILD THE FUTURE.
+                                MASTER AI & AUTOMATION.
                             </span>
                             <motion.span
                                 initial={{ width: "0%" }}
@@ -70,7 +70,7 @@ const OutcomeBanner = () => {
                         </span>
                         <br />
                         <span className="block mt-6 text-2xl md:text-3xl lg:text-4xl text-gray-600 font-bold tracking-tight">
-                            Create Your Own AI Agents, Chatbots, ML Models & SaaS Apps.
+                            Build Your Own AI Agents, Smart Dashboards, Automation Systems & Real-World Projects.
                         </span>
                     </motion.h2>
 
@@ -87,10 +87,10 @@ const OutcomeBanner = () => {
                     {/* Floating Icons / Visual Interest */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
                         {[
-                            { icon: <Bot size={32} />, label: "AI Chatbots", color: "bg-blue-50 text-blue-600", delay: 0.6 },
-                            { icon: <Cpu size={32} />, label: "ML Models", color: "bg-purple-50 text-purple-600", delay: 0.7 },
-                            { icon: <Rocket size={32} />, label: "SaaS Apps", color: "bg-pink-50 text-pink-600", delay: 0.8 },
-                            { icon: <Globe size={32} />, label: "Websites", color: "bg-indigo-50 text-indigo-600", delay: 0.9 },
+                            { icon: <Bot size={32} />, label: "AI Agents", color: "bg-blue-50 text-blue-600", delay: 0.6 },
+                            { icon: <Zap size={32} />, label: "Automation", color: "bg-purple-50 text-purple-600", delay: 0.7 },
+                            { icon: <LayoutDashboard size={32} />, label: "Dashboards", color: "bg-pink-50 text-pink-600", delay: 0.8 },
+                            { icon: <Briefcase size={32} />, label: "Real Projects", color: "bg-indigo-50 text-indigo-600", delay: 0.9 },
                         ].map((item, index) => (
                             <motion.div
                                 key={index}
