@@ -77,7 +77,7 @@ const CourseRoadmap = () => {
                         </p>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-gray-900">
-                        4‑Month <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">AI Mastery</span> Journey
+                        5‑Month <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">AI Mastery</span> Journey
                     </h2>
                     <p className="text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
                         From absolute basics to professional‑grade AI projects.

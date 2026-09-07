@@ -12,7 +12,7 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({
     title = "Skillence - AI & Coding Courses",
-    description = "Master AI, Python, and Automation with Skillence. Join our 4-month mastery journey to build professional-grade projects.",
+    description = "Master AI, Python, and Automation with Skillence. Join our 5-month mastery journey to build professional-grade projects.",
     keywords = "ai courses, computer courses, coding classes, python programming, automation, data analytics",
     image = "/og-image.jpg",
     url = "https://skillence.com",

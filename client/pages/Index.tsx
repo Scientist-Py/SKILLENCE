@@ -4,6 +4,7 @@ import ProjectsGallery from "../components/ProjectsGallery";
 import ResultsSection from "../components/ResultsSection";
 import MethodSection from "../components/MethodSection";
 import CTASection from "../components/CTASection";
+import PricingSection from "../components/PricingSection";
 import LocationSection from "../components/LocationSection";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
@@ -70,6 +71,9 @@ export default function Index() {
         <div id="method">
           <MethodSection />
         </div>
+
+        {/* Pricing Section */}
+        <PricingSection />
 
         {/* Location Section */}
         <LocationSection />

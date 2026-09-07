@@ -20,7 +20,7 @@ export default function Syllabus() {
             Full Course Syllabus
           </h1>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-            Explore everything you&apos;ll learn in our 4‑month AI, Python, and
+            Explore everything you&apos;ll learn in our 5‑month AI, Python, and
             Automation program &mdash; from foundations to 120+ real‑world
             projects.
           </p>
