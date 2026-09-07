@@ -35,7 +35,7 @@ export default function Footer() {
                 </h3>
               </Link>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Master Artificial Intelligence with 80+ real-world
+                Master Artificial Intelligence with 120+ real-world
                 projects and industry-recognized certification.
               </p>
             </div>

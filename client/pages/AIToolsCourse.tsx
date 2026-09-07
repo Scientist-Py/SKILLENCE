@@ -60,7 +60,7 @@ export default function AIToolsCourse() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-12">
             <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
-              <div className="text-3xl font-bold">80+</div>
+              <div className="text-3xl font-bold">120+</div>
               <div className="text-sm">Real Projects</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
@@ -141,7 +141,7 @@ export default function AIToolsCourse() {
             </div>
             <div className="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold mb-3">Build Portfolio-Ready Projects</h3>
-              <p className="text-gray-600">Create 80+ real projects that showcase your skills.</p>
+              <p className="text-gray-600">Create 120+ real projects that showcase your skills.</p>
             </div>
             <div className="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold mb-3">Learn Python, AI & Automation</h3>

@@ -10,7 +10,7 @@ export default function ResultsSection() {
       icon: "💼",
       title: "Build Portfolio-Ready Projects",
       description:
-        "Create 80+ real projects that showcase your skills",
+        "Create 120+ real projects that showcase your skills",
     },
     {
       icon: "🤖",
@@ -63,7 +63,7 @@ export default function ResultsSection() {
         {/* Stats Bar */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-10">
           <div className="text-center p-5 md:p-7 bg-white border border-gray-200 rounded-2xl hover:border-gray-300 hover:shadow-xl hover:bg-gray-50 transition-all duration-300 hover:scale-105 group cursor-pointer premium-shadow hover:premium-shadow-lg">
-            <div className="text-4xl md:text-5xl font-bold text-black mb-2 group-hover:text-gray-800 transition-colors duration-300 tracking-tight">80+</div>
+            <div className="text-4xl md:text-5xl font-bold text-black mb-2 group-hover:text-gray-800 transition-colors duration-300 tracking-tight">120+</div>
             <p className="text-sm md:text-base text-gray-600 font-semibold group-hover:text-gray-700 transition-colors duration-300">Real Projects</p>
           </div>
           <div className="text-center p-4 md:p-6 bg-white border border-gray-200 rounded-lg hover:border-gray-400 hover:shadow-md hover:bg-gray-50 transition-all duration-300 hover:scale-105 group cursor-pointer">

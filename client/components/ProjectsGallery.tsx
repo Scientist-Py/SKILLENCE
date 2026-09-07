@@ -238,7 +238,7 @@ export default function ProjectsGallery() {
           <div className="mb-12 text-center">
             <div className="inline-block mb-4">
               <span className="bg-black text-white px-5 py-2 rounded-full text-sm font-bold tracking-wide shadow-lg">
-                100+ Projects
+                120+ Projects
               </span>
             </div>
             <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-black mb-4 tracking-tight leading-tight">

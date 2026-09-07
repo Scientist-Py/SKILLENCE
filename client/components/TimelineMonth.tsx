@@ -207,7 +207,7 @@ const monthData = {
   },
   4: {
     title: "AI & Automation Project Mastery",
-    subtitle: "100% Applied Learning - Build 100+ Real-World Projects",
+    subtitle: "100% Applied Learning - Build 120+ Real-World Projects",
     modules: [
       {
         icon: "🧠",

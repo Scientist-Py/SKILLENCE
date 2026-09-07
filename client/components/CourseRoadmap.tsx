@@ -45,7 +45,7 @@ const CourseRoadmap = () => {
         {
             month: "Month 4",
             label: "Portfolio",
-            title: "80+ Real Projects",
+            title: "120+ Real Projects",
             desc: "Build production-ready AI assistants, automation systems, games, and portfolio-worthy applications.",
             icon: "🏆",
             color: "amber",
