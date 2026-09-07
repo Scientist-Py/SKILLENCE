@@ -295,6 +295,18 @@ const monthData = {
         ],
       },
       {
+        icon: "🤖",
+        title: "Autonomous AI Agents & Multi-Agent Systems",
+        topics: [
+          "Personal, Research, Web-Search, Coding & Email Agents",
+          "Autonomous Sales, Marketing, Lead-Gen & Follow-Up Agents",
+          "WhatsApp, Customer-Support & Calendar Booking Agents",
+          "Domain Agents: HR, Recruitment, Finance, Real-Estate & Medical",
+          "Multi-Agent Swarms & Agentic Customer Support Architecture",
+          "Autonomous Content Generation & AI Business Analyst Agents",
+        ],
+      },
+      {
         icon: "📚",
         title: "RAG & Enterprise Knowledge AI",
         topics: [
