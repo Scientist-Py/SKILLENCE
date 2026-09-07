@@ -77,7 +77,7 @@ export default function PricingSection() {
               {/* Badge */}
               <div className="absolute -top-4 right-8 bg-gradient-to-r from-amber-400 to-yellow-500 text-black px-4 py-1.5 rounded-full text-xs font-black tracking-wider uppercase flex items-center gap-1 shadow-md">
                 <Sparkles className="h-3.5 w-3.5" />
-                Best Value — Save ₹2,901
+                Best Value — Save ₹1,501
               </div>
 
               <div>
@@ -92,7 +92,7 @@ export default function PricingSection() {
                 </p>
 
                 <div className="mb-6 flex items-baseline gap-2">
-                  <span className="text-4xl md:text-5xl font-black text-white">₹4,599</span>
+                  <span className="text-4xl md:text-5xl font-black text-white">₹5,999</span>
                   <span className="text-gray-400 line-through text-lg">₹7,500</span>
                   <span className="text-xs bg-emerald-500/20 text-emerald-400 font-bold px-2 py-0.5 rounded ml-2">
                     One-time
