@@ -207,7 +207,7 @@ const monthData = {
   },
   4: {
     title: "AI & Automation Project Mastery",
-    subtitle: "100% Applied Learning - Build 80+ Real-World Projects",
+    subtitle: "100% Applied Learning - Build 100+ Real-World Projects",
     modules: [
       {
         icon: "🧠",
@@ -236,14 +236,16 @@ const monthData = {
       },
       {
         icon: "👁️‍🗨️",
-        title: "Computer Vision & Face-Based Projects",
+        title: "Computer Vision & Smart Camera Projects",
         topics: [
-          "Face Detection and Recognition System",
-          "Face Attendance System",
-          "Hand Gesture Volume Control",
-          "Eye Blink Detector (Anti Sleep System)",
-          "Virtual Painter using Hand Gestures",
-          "Smart Security Cam (Face-Based Alerts)",
+          "Face Detection & Face Recognition Attendance / Login",
+          "Object Detection, Object Tracking & People/Vehicle Counter",
+          "Parking Detection & AI Security Camera with Intrusion Alerts",
+          "Helmet Detection & PPE Safety Compliance System",
+          "Pose Estimation & Gesture Recognition Control",
+          "OCR System, Document Scanner & ANPR Number Plate Recognition",
+          "Image & Product Classifiers, Food & Plant Disease Detection",
+          "Waste Classification & Retail Shelf / Restaurant Table Monitoring",
         ],
       },
       {
@@ -268,6 +270,28 @@ const monthData = {
           "AI Quiz Game",
           "Gesture-Based Drawing App",
           "Tic Tac Toe (AI vs Human)",
+        ],
+      },
+      {
+        icon: "🏢",
+        title: "Enterprise & Business Systems",
+        topics: [
+          "AI-Powered CRM System (Lead Tracking & Automations)",
+          "Smart Billing & Invoicing Engine (GST/Tax & PDF Invoices)",
+          "Retail & Restaurant POS System (Inventory & Checkout)",
+          "Smart Inventory & Multi-branch Supply Chain Dashboard",
+          "Automated HRMS & Payroll Management Portal",
+        ],
+      },
+      {
+        icon: "🚦",
+        title: "Civic Automation & Smart Govt Systems",
+        topics: [
+          "Govt Smart E-Challan & Traffic Violation System",
+          "ANPR (Automated Number Plate Recognition) with Computer Vision",
+          "Automated Violation Detection (Speed/Signal/Helmet)",
+          "Automated E-Challan SMS & WhatsApp Ticket Dispatch",
+          "Citizen Portal: Vehicle Challan Search & Payment Simulation",
         ],
       },
       {

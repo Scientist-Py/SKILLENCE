@@ -21,7 +21,7 @@ export default function Syllabus() {
           </h1>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
             Explore everything you&apos;ll learn in our 4‑month AI, Python, and
-            Automation program &mdash; from foundations to 80+ real‑world
+            Automation program &mdash; from foundations to 100+ real‑world
             projects.
           </p>
         </section>

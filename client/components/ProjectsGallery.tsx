@@ -56,23 +56,39 @@ const projectCategories: ProjectCategory[] = [
   },
   {
     id: "vision",
-    name: "Computer Vision",
+    name: "Computer Vision & Smart Cameras",
     icon: "👁️‍🗨️",
     projects: [
-      { title: "Face Detection System", icon: "👤" },
+      { title: "Face Detection", icon: "👤" },
+      { title: "Face Recognition", icon: "🔍" },
       { title: "Face Attendance System", icon: "✅" },
       { title: "Face Login System", icon: "🔓" },
-      { title: "Hand Gesture Volume Control", icon: "🎚️" },
-      { title: "Eye Blink Detector", icon: "👁️" },
-      { title: "Traffic Sign Detector", icon: "🚦" },
-      { title: "Virtual Painter", icon: "🎨" },
       { title: "Object Detection", icon: "📦" },
-      { title: "Face Landmark AR Mask", icon: "😷" },
+      { title: "Object Tracking", icon: "🎯" },
       { title: "People Counter", icon: "👥" },
-      { title: "Smart Security Cam", icon: "📹" },
-      { title: "Gesture Controlled Presentation", icon: "🎬" },
-      { title: "Real-time Video Effects", icon: "✨" },
-      { title: "Pose Detection System", icon: "🏃" },
+      { title: "Vehicle Counter", icon: "🚗" },
+      { title: "Parking Detection", icon: "🅿️" },
+      { title: "Helmet Detection", icon: "🪖" },
+      { title: "PPE Detection", icon: "🦺" },
+      { title: "Hand Detection", icon: "✋" },
+      { title: "Pose Estimation", icon: "🏃" },
+      { title: "Gesture Recognition", icon: "✌️" },
+      { title: "OCR System", icon: "📄" },
+      { title: "Number-Plate Recognition (ANPR)", icon: "🚘" },
+      { title: "Document Scanner", icon: "📑" },
+      { title: "Image Classifier", icon: "🖼️" },
+      { title: "Product Classifier", icon: "🏷️" },
+      { title: "Food Recognition", icon: "🍕" },
+      { title: "Plant Disease Detection", icon: "🌿" },
+      { title: "Waste Classification", icon: "♻️" },
+      { title: "Camera Alert System", icon: "🚨" },
+      { title: "Intrusion Detection", icon: "🚷" },
+      { title: "Retail Shelf Monitoring", icon: "🏬" },
+      { title: "Restaurant Table Monitoring", icon: "🍽️" },
+      { title: "AI Security Camera", icon: "📹" },
+      { title: "Eye Blink & Anti-Sleep Detector", icon: "👁️" },
+      { title: "Virtual Painter with Gestures", icon: "🎨" },
+      { title: "Traffic Sign Detector", icon: "🚦" },
     ],
   },
   {
@@ -106,6 +122,25 @@ const projectCategories: ProjectCategory[] = [
       { title: "Puzzle Solver AI", icon: "🧩" },
       { title: "Memory Card Game", icon: "🎴" },
       { title: "AI Guess the Number", icon: "🔢" },
+    ],
+  },
+  {
+    id: "enterprise",
+    name: "Enterprise & Civic Systems",
+    icon: "🏢",
+    projects: [
+      { title: "AI-Powered CRM System", icon: "📇" },
+      { title: "Automated Billing & Invoicing Engine", icon: "🧾" },
+      { title: "Retail & Restaurant POS System", icon: "🛒" },
+      { title: "Govt Smart E-Challan & Traffic System", icon: "🚦" },
+      { title: "ANPR Number Plate Detection System", icon: "🚗" },
+      { title: "Smart Warehouse & Inventory Tracker", icon: "📦" },
+      { title: "HRMS & Automated Payroll Portal", icon: "👥" },
+      { title: "Hospital OPD Queue & Token System", icon: "🏥" },
+      { title: "Hotel & Table Reservation (KDS)", icon: "🏨" },
+      { title: "GST & Tax Calculation Engine", icon: "📊" },
+      { title: "Automated Ticket Dispatch & SMS Alerts", icon: "📲" },
+      { title: "Multi-branch Supply Chain Dashboard", icon: "🏭" },
     ],
   },
   {
@@ -144,7 +179,7 @@ export default function ProjectsGallery() {
           <div className="mb-12 text-center">
             <div className="inline-block mb-4">
               <span className="bg-black text-white px-5 py-2 rounded-full text-sm font-bold tracking-wide shadow-lg">
-                80+ Projects
+                100+ Projects
               </span>
             </div>
             <h2 className="font-bold text-3xl sm:text-4xl md:text-5xl text-black mb-4 tracking-tight leading-tight">
