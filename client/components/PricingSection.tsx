@@ -4,6 +4,12 @@ import JoinUsForm from "./JoinUsForm";
 
 export default function PricingSection() {
   const [showForm, setShowForm] = useState(false);
+  const [initialPlan, setInitialPlan] = useState<string>("full");
+
+  const openFormWithPlan = (planId: string) => {
+    setInitialPlan(planId);
+    setShowForm(true);
+  };
 
   return (
     <>
@@ -65,7 +71,7 @@ export default function PricingSection() {
               </div>
 
               <button
-                onClick={() => setShowForm(true)}
+                onClick={() => openFormWithPlan("monthly")}
                 className="w-full py-3.5 px-6 rounded-xl border-2 border-black text-black font-semibold hover:bg-gray-100 transition-all duration-200 text-center"
               >
                 Enroll Monthly →
@@ -124,7 +130,7 @@ export default function PricingSection() {
               </div>
 
               <button
-                onClick={() => setShowForm(true)}
+                onClick={() => openFormWithPlan("full")}
                 className="w-full py-4 px-6 rounded-xl bg-white text-black font-bold hover:bg-gray-100 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-lg text-center"
               >
                 Get Full 5-Month Pass →
@@ -148,7 +154,7 @@ export default function PricingSection() {
               </div>
             </div>
             <button
-              onClick={() => setShowForm(true)}
+              onClick={() => openFormWithPlan("home_demo")}
               className="px-6 py-3 bg-black text-white font-semibold rounded-xl hover:bg-gray-800 transition-all text-sm whitespace-nowrap"
             >
               Book Free Demo
@@ -157,7 +163,7 @@ export default function PricingSection() {
         </div>
       </section>
 
-      {showForm && <JoinUsForm onClose={() => setShowForm(false)} />}
+      {showForm && <JoinUsForm onClose={() => setShowForm(false)} initialPlan={initialPlan} />}
     </>
   );
 }
