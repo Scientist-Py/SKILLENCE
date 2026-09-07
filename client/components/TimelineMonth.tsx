@@ -295,6 +295,18 @@ const monthData = {
         ],
       },
       {
+        icon: "📚",
+        title: "RAG & Enterprise Knowledge AI",
+        topics: [
+          "Chat with PDF, Multiple PDFs, Textbooks & Research Papers",
+          "Company & College Knowledge Base Chatbots with Hybrid Search",
+          "Legal & Product Document Search with Semantic Engines",
+          "YouTube Transcript, Notion & Google Drive Assistants",
+          "Codebase & Database RAG with Vector Embeddings",
+          "Multimodal, Image-Document & Voice-Document RAG",
+        ],
+      },
+      {
         icon: "🌐",
         title: "No-Code Website & System Builders",
         topics: [
