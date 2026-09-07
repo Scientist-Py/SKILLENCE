@@ -47,7 +47,7 @@ const PLANS = [
 ];
 
 export default function JoinUsForm({ onClose, initialPlan }: JoinUsFormProps) {
-  const [step, setStep] = useState<1 | 2>(initialPlan ? 2 : 1);
+  const [step, setStep] = useState<1 | 2>(1);
   const [selectedPlanId, setSelectedPlanId] = useState<string>(initialPlan || 'full');
   
   const [formData, setFormData] = useState({
